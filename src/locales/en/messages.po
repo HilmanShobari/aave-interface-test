@@ -1292,10 +1292,6 @@ msgstr "Net APY is the combined effect of all supply and borrow positions on net
 msgid "Net worth"
 msgstr "Net worth"
 
-#: src/layouts/WalletWidget.tsx
-msgid "Network"
-msgstr "Network"
-
 #: src/components/WalletConnection/WalletSelector.tsx
 msgid "Network not supported for this wallet"
 msgstr "Network not supported for this wallet"

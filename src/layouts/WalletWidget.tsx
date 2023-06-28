@@ -172,7 +172,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
       )}
       <Divider sx={{ my: { xs: 7, md: 0 }, borderColor: { xs: '#FFFFFF1F', md: 'divider' } }} />
 
-      <Box component={component} disabled>
+      {/* <Box component={component} disabled>
         <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
           <Box
             sx={{
@@ -202,8 +202,8 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
             </Typography>
           </Box>
         </Box>
-      </Box>
-      <Divider sx={{ my: { xs: 7, md: 0 }, borderColor: { xs: '#FFFFFF1F', md: 'divider' } }} />
+      </Box> */}
+      {/* <Divider sx={{ my: { xs: 7, md: 0 }, borderColor: { xs: '#FFFFFF1F', md: 'divider' } }} /> */}
 
       {/* <Box
         component={component}
