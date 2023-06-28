@@ -81,15 +81,15 @@ export function SettingsMenu() {
         sx={{ '.MuiMenuItem-root.Mui-disabled': { opacity: 1 } }}
         keepMounted={true}
       >
-        <MenuItem disabled sx={{ mb: '4px' }}>
+        {/* <MenuItem disabled sx={{ mb: '4px' }}>
           <Typography variant="subheader2" color="text.secondary">
             <Trans>Global settings</Trans>
           </Typography>
-        </MenuItem>
+        </MenuItem> */}
 
-        <DarkModeSwitcher component={MenuItem} />
+        {/* <DarkModeSwitcher component={MenuItem} /> */}
         {PROD_ENV && <TestNetModeSwitcher />}
-        <LanguageListItem onClick={handleLanguageClick} component={MenuItem} />
+        {/* <LanguageListItem onClick={handleLanguageClick} component={MenuItem} /> */}
       </Menu>
 
       <Menu

@@ -40,51 +40,54 @@ import { BorrowAssetsListMobileItem } from './BorrowAssetsListMobileItem';
 const head = [
   {
     title: <Trans>Asset</Trans>,
-    sortKey: 'symbol',
+    // sortKey: 'symbol',
   },
   {
-    title: (
-      <AvailableTooltip
-        event={{
-          eventName: GENERAL.TOOL_TIP,
-          eventParams: { tooltip: 'Available to borrow' },
-        }}
-        capType={CapType.borrowCap}
-        text={<Trans>Available</Trans>}
-        key="availableBorrows"
-        variant="subheader2"
-      />
-    ),
-    sortKey: 'availableBorrows',
+    title: <Trans>Available</Trans>,
+    // title: (
+    //   <AvailableTooltip
+    //     event={{
+    //       eventName: GENERAL.TOOL_TIP,
+    //       eventParams: { tooltip: 'Available to borrow' },
+    //     }}
+    //     capType={CapType.borrowCap}
+    //     text={<Trans>Available</Trans>}
+    //     key="availableBorrows"
+    //     variant="subheader2"
+    //   />
+    // ),
+    // sortKey: 'availableBorrows',
   },
 
   {
-    title: (
-      <VariableAPYTooltip
-        event={{
-          eventName: GENERAL.TOOL_TIP,
-          eventParams: { tooltip: 'Variable Borrow APY' },
-        }}
-        text={<Trans>APY, variable</Trans>}
-        key="variableBorrowAPY"
-        variant="subheader2"
-      />
-    ),
-    sortKey: 'variableBorrowAPY',
+    title: <Trans>APY, variable</Trans>,
+    // title: (
+    //   <VariableAPYTooltip
+    //     event={{
+    //       eventName: GENERAL.TOOL_TIP,
+    //       eventParams: { tooltip: 'Variable Borrow APY' },
+    //     }}
+    //     text={<Trans>APY, variable</Trans>}
+    //     key="variableBorrowAPY"
+    //     variant="subheader2"
+    //   />
+    // ),
+    // sortKey: 'variableBorrowAPY',
   },
   {
-    title: (
-      <StableAPYTooltip
-        event={{
-          eventName: GENERAL.TOOL_TIP,
-          eventParams: { tooltip: 'Stable Borrow APY' },
-        }}
-        text={<Trans>APY, stable</Trans>}
-        key="stableBorrowAPY"
-        variant="subheader2"
-      />
-    ),
-    sortKey: 'stableBorrowAPY',
+    title: <Trans>APY, stable</Trans>,
+    // title: (
+    //   <StableAPYTooltip
+    //     event={{
+    //       eventName: GENERAL.TOOL_TIP,
+    //       eventParams: { tooltip: 'Stable Borrow APY' },
+    //     }}
+    //     text={<Trans>APY, stable</Trans>}
+    //     key="stableBorrowAPY"
+    //     variant="subheader2"
+    //   />
+    // ),
+    // sortKey: 'stableBorrowAPY',
   },
 ];
 
@@ -165,16 +168,16 @@ export const BorrowAssetsList = () => {
       <ListHeaderWrapper>
         {head.map((col) => (
           <ListColumn
-            isRow={col.sortKey === 'symbol'}
-            maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
-            key={col.sortKey}
+          // isRow={col.sortKey === 'symbol'}
+          // maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
+          // key={col.sortKey}
           >
             <ListHeaderTitle
               sortName={sortName}
               sortDesc={sortDesc}
               setSortName={setSortName}
               setSortDesc={setSortDesc}
-              sortKey={col.sortKey}
+              // sortKey={col.sortKey}
             >
               {col.title}
             </ListHeaderTitle>

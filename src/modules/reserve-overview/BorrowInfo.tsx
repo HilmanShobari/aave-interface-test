@@ -207,14 +207,14 @@ export const BorrowInfo = ({
           currentMarketData={currentMarketData}
         />
       )}
-      <Box
+      {/* <Box
         sx={{ display: 'inline-flex', alignItems: 'center', pt: '42px', pb: '12px' }}
         paddingTop={'42px'}
       >
         <Typography variant="subheader1" color="text.main">
           <Trans>Collector Info</Trans>
         </Typography>
-      </Box>
+      </Box> */}
       {currentMarketData.addresses.COLLECTOR && (
         <ReserveFactorOverview
           collectorContract={currentMarketData.addresses.COLLECTOR}

@@ -48,7 +48,7 @@ export const IsolatedEnabledBadge = ({
         <Typography variant="secondary12" color="text.secondary" {...typographyProps}>
           <Trans>Isolated</Trans>
         </Typography>
-        <InfoIcon />
+        {/* <InfoIcon /> */}
       </Box>
     </ContentWithTooltip>
   );
@@ -72,7 +72,7 @@ export const IsolatedDisabledBadge = () => {
         <Typography variant="description" color="error.main">
           <Trans>Unavailable</Trans>
         </Typography>
-        <InfoIcon />
+        {/* <InfoIcon /> */}
       </Box>
     </ContentWithTooltip>
   );
@@ -91,7 +91,7 @@ export const UnavailableDueToIsolationBadge = () => {
         <Typography variant="description" color="error.main">
           <Trans>Unavailable</Trans>
         </Typography>
-        <InfoIcon />
+        {/* <InfoIcon /> */}
       </Box>
     </ContentWithTooltip>
   );

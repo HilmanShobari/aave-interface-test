@@ -86,7 +86,7 @@ export const ListWrapper = ({
           {subTitleComponent}
         </Box>
 
-        {!!localStorageName && !noData && (
+        {/* {!!localStorageName && !noData && (
           <Box
             sx={{
               display: 'flex',
@@ -125,7 +125,7 @@ export const ListWrapper = ({
             </Typography>
             <span />
           </Box>
-        )}
+        )} */}
       </Box>
 
       {topInfo && (

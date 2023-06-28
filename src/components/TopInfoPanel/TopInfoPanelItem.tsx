@@ -47,7 +47,7 @@ export const TopInfoPanelItem = ({
         />
       )}
 
-      {!hideIcon &&
+      {hideIcon && //hide the icon top panel
         (withoutIconWrapper ? (
           icon && icon
         ) : (

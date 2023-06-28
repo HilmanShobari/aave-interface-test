@@ -158,12 +158,12 @@ export const DashboardTopPanel = () => {
           title={
             <div style={{ display: 'flex' }}>
               <Trans>Net APY</Trans>
-              <NetAPYTooltip
+              {/* <NetAPYTooltip
                 event={{
                   eventName: GENERAL.TOOL_TIP,
                   eventParams: { tooltip: 'NET APY: Dashboard Banner' },
                 }}
-              />
+              /> */}
             </div>
           }
           loading={loading}

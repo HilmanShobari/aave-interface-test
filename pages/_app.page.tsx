@@ -2,7 +2,7 @@ import '/public/fonts/inter/inter.css';
 
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Web3ReactProvider } from '@web3-react/core';
 import { providers } from 'ethers';
 import { NextPage } from 'next';
@@ -76,7 +76,7 @@ export default function MyApp(props: MyAppProps) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Meta
-        title={'Open Source Liquidity Protocol'}
+        title={'Lending & Borrowing'}
         description={
           'Aave is an Open Source Protocol to create Non-Custodial Liquidity Markets to earn interest on supplying and borrowing assets with a variable or stable interest rate. The protocol is designed for easy integration into your products and services.'
         }
@@ -117,7 +117,7 @@ export default function MyApp(props: MyAppProps) {
               </AppGlobalStyles>
             </Web3ContextProvider>
           </Web3ReactProvider>
-          <ReactQueryDevtools initialIsOpen={false} />
+          {/* <ReactQueryDevtools initialIsOpen={false} /> */}
         </QueryClientProvider>
       </LanguageProvider>
     </CacheProvider>

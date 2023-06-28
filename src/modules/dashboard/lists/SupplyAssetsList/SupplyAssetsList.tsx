@@ -33,12 +33,12 @@ import { SupplyAssetsListMobileItem } from './SupplyAssetsListMobileItem';
 import { WalletEmptyInfo } from './WalletEmptyInfo';
 
 const head = [
-  { title: <Trans key="assets">Assets</Trans>, sortKey: 'symbol' },
-  { title: <Trans key="Wallet balance">Wallet balance</Trans>, sortKey: 'walletBalance' },
-  { title: <Trans key="APY">APY</Trans>, sortKey: 'supplyAPY' },
+  { title: <Trans key="assets">Assets</Trans> /*, sortKey: 'symbol'*/ },
+  { title: <Trans key="Wallet balance">Wallet balance</Trans> /*, sortKey: 'walletBalance'*/ },
+  { title: <Trans key="APY">APY</Trans> /*, sortKey: 'supplyAPY'*/ },
   {
-    title: <Trans key="Can be collateral">Can be collateral</Trans>,
-    sortKey: 'usageAsCollateralEnabledOnUser',
+    title: <Trans key="Can be collateral">Can be collateral</Trans> /*,
+    sortKey: 'usageAsCollateralEnabledOnUser',*/,
   },
 ];
 
@@ -184,9 +184,9 @@ export const SupplyAssetsList = () => {
       <ListHeaderWrapper>
         {head.map((col) => (
           <ListColumn
-            isRow={col.sortKey === 'symbol'}
-            maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
-            key={col.sortKey}
+            // isRow={col.sortKey === 'symbol'}
+            // maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
+            // key={col.sortKey}
             overFlow={'visible'}
           >
             <ListHeaderTitle
@@ -194,7 +194,7 @@ export const SupplyAssetsList = () => {
               sortDesc={sortDesc}
               setSortName={setSortName}
               setSortDesc={setSortDesc}
-              sortKey={col.sortKey}
+              // sortKey={col.sortKey}
             >
               {col.title}
             </ListHeaderTitle>
@@ -259,14 +259,14 @@ export const SupplyAssetsList = () => {
             )}
           </Box>
 
-          {filteredSupplyReserves.length >= 1 && (
+          {/* {filteredSupplyReserves.length >= 1 && (
             <DashboardListTopPanel
               value={isShowZeroAssets}
               onClick={setIsShowZeroAssets}
               localStorageName={localStorageName}
               bridge={bridge}
             />
-          )}
+          )} */}
         </>
       }
     >

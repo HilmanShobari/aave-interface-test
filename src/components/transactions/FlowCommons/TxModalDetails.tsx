@@ -56,14 +56,14 @@ export const TxModalDetails: React.FC<TxModalDetailsProps> = ({
       >
         {children}
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      {/* <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <GasStation
           gasLimit={parseUnits(gasLimit || '0', 'wei')}
           skipLoad={skipLoad}
           disabled={disabled}
         />
         {slippageSelector}
-      </Box>
+      </Box> */}
     </Box>
   );
 };

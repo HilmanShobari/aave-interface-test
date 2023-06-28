@@ -35,29 +35,30 @@ import { BorrowedPositionsListMobileItem } from './BorrowedPositionsListMobileIt
 const head = [
   {
     title: <Trans>Asset</Trans>,
-    sortKey: 'symbol',
+    /*sortKey: 'symbol',*/
   },
   {
     title: <Trans key="Debt">Debt</Trans>,
-    sortKey: 'variableBorrows',
+    // sortKey: 'variableBorrows',
   },
   {
     title: <Trans key="APY">APY</Trans>,
-    sortKey: 'borrowAPY',
+    // sortKey: 'borrowAPY',
   },
   {
-    title: (
-      <APYTypeTooltip
-        event={{
-          eventName: GENERAL.TOOL_TIP,
-          eventParams: { tooltip: 'APY Type Borrow' },
-        }}
-        text={<Trans>APY type</Trans>}
-        key="APY type"
-        variant="subheader2"
-      />
-    ),
-    sortKey: 'typeAPY',
+    title: <Trans key="APY type">APY type</Trans>,
+    // title: (
+    //   <APYTypeTooltip
+    //     event={{
+    //       eventName: GENERAL.TOOL_TIP,
+    //       eventParams: { tooltip: 'APY Type Borrow' },
+    //     }}
+    //     text={<Trans>APY type</Trans>}
+    //     key="APY type"
+    //     variant="subheader2"
+    //   />
+    // ),
+    // sortKey: 'typeAPY',
   },
 ];
 
@@ -127,16 +128,16 @@ export const BorrowedPositionsList = () => {
       <ListHeaderWrapper>
         {head.map((col) => (
           <ListColumn
-            isRow={col.sortKey === 'symbol'}
-            maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
-            key={col.sortKey}
+          // isRow={col.sortKey === 'symbol'}
+          // maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
+          // key={col.sortKey}
           >
             <ListHeaderTitle
               sortName={sortName}
               sortDesc={sortDesc}
               setSortName={setSortName}
               setSortDesc={setSortDesc}
-              sortKey={col.sortKey}
+              // sortKey={col.sortKey}
             >
               {col.title}
             </ListHeaderTitle>
@@ -158,11 +159,11 @@ export const BorrowedPositionsList = () => {
         </Typography>
       }
       localStorageName="borrowedAssetsDashboardTableCollapse"
-      subTitleComponent={
-        currentMarketData.v3 ? (
-          <DashboardEModeButton userEmodeCategoryId={user.userEmodeCategoryId} />
-        ) : undefined
-      }
+      // subTitleComponent={
+      //   currentMarketData.v3 ? (
+      //     <DashboardEModeButton userEmodeCategoryId={user.userEmodeCategoryId} />
+      //   ) : undefined
+      // }
       noData={!sortedReserves.length}
       topInfo={
         <>
@@ -173,27 +174,27 @@ export const BorrowedPositionsList = () => {
                 title={<Trans>APY</Trans>}
                 value={user?.debtAPY || 0}
                 percent
-                tooltip={
-                  <TotalBorrowAPYTooltip
-                    event={{
-                      eventName: GENERAL.TOOL_TIP,
-                      eventParams: { tooltip: 'Total Borrowed APY' },
-                    }}
-                  />
-                }
+                // tooltip={
+                //   <TotalBorrowAPYTooltip
+                //     event={{
+                //       eventName: GENERAL.TOOL_TIP,
+                //       eventParams: { tooltip: 'Total Borrowed APY' },
+                //     }}
+                //   />
+                // }
               />
               <ListTopInfoItem
                 title={<Trans>Borrow power used</Trans>}
                 value={collateralUsagePercent || 0}
                 percent
-                tooltip={
-                  <BorrowPowerTooltip
-                    event={{
-                      eventName: GENERAL.TOOL_TIP,
-                      eventParams: { tooltip: 'Borrow power used' },
-                    }}
-                  />
-                }
+                // tooltip={
+                //   <BorrowPowerTooltip
+                //     event={{
+                //       eventName: GENERAL.TOOL_TIP,
+                //       eventParams: { tooltip: 'Borrow power used' },
+                //     }}
+                //   />
+                // }
               />
             </>
           )}

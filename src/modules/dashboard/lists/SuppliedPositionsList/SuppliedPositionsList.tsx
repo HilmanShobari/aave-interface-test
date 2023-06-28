@@ -29,31 +29,32 @@ import { SuppliedPositionsListMobileItem } from './SuppliedPositionsListMobileIt
 
 const head = [
   {
-    title: <Trans>Asset</Trans>,
-    sortKey: 'symbol',
+    title: <Trans>Asset</Trans> /*,
+    sortKey: 'symbol',*/,
   },
   {
-    title: <Trans key="Balance">Balance</Trans>,
-    sortKey: 'underlyingBalance',
+    title: <Trans key="Balance">Balance</Trans> /*,
+    sortKey: 'underlyingBalance',*/,
   },
 
   {
-    title: <Trans key="APY">APY</Trans>,
-    sortKey: 'supplyAPY',
+    title: <Trans key="APY">APY</Trans> /*,
+    sortKey: 'supplyAPY',*/,
   },
   {
-    title: (
-      <CollateralSwitchTooltip
-        event={{
-          eventName: GENERAL.TOOL_TIP,
-          eventParams: { tooltip: 'Collateral Switch' },
-        }}
-        text={<Trans>Collateral</Trans>}
-        key="Collateral"
-        variant="subheader2"
-      />
-    ),
-    sortKey: 'usageAsCollateralEnabledOnUser',
+    title: <Trans key="Collateral">Collateral</Trans>,
+    // (
+    //   <CollateralSwitchTooltip
+    //     event={{
+    //       eventName: GENERAL.TOOL_TIP,
+    //       eventParams: { tooltip: 'Collateral Switch' },
+    //     }}
+    //     text={<Trans>Collateral</Trans>}
+    //     key="Collateral"
+    //     variant="subheader2"
+    //   />
+    // )
+    /*,sortKey: 'usageAsCollateralEnabledOnUser',*/
   },
 ];
 
@@ -96,16 +97,16 @@ export const SuppliedPositionsList = () => {
       <ListHeaderWrapper>
         {head.map((col) => (
           <ListColumn
-            isRow={col.sortKey === 'symbol'}
-            maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
-            key={col.sortKey}
+          // isRow={col.sortKey === 'symbol'}
+          // maxWidth={col.sortKey === 'symbol' ? DASHBOARD_LIST_COLUMN_WIDTHS.ASSET : undefined}
+          // key={col.sortKey}
           >
             <ListHeaderTitle
               sortName={sortName}
               sortDesc={sortDesc}
               setSortName={setSortName}
               setSortDesc={setSortDesc}
-              sortKey={col.sortKey}
+              // sortKey={col.sortKey}
             >
               {col.title}
             </ListHeaderTitle>
@@ -140,26 +141,26 @@ export const SuppliedPositionsList = () => {
                 title={<Trans>APY</Trans>}
                 value={user?.earnedAPY || 0}
                 percent
-                tooltip={
-                  <TotalSupplyAPYTooltip
-                    event={{
-                      eventName: GENERAL.TOOL_TIP,
-                      eventParams: { tooltip: 'Total Supplied APY' },
-                    }}
-                  />
-                }
+                // tooltip={
+                //   <TotalSupplyAPYTooltip
+                //     event={{
+                //       eventName: GENERAL.TOOL_TIP,
+                //       eventParams: { tooltip: 'Total Supplied APY' },
+                //     }}
+                //   />
+                // }
               />
               <ListTopInfoItem
                 title={<Trans>Collateral</Trans>}
                 value={user?.totalCollateralUSD || 0}
-                tooltip={
-                  <CollateralTooltip
-                    event={{
-                      eventName: GENERAL.TOOL_TIP,
-                      eventParams: { tooltip: 'Total Supplied Collateral' },
-                    }}
-                  />
-                }
+                // tooltip={
+                //   <CollateralTooltip
+                //     event={{
+                //       eventName: GENERAL.TOOL_TIP,
+                //       eventParams: { tooltip: 'Total Supplied Collateral' },
+                //     }}
+                //   />
+                // }
               />
             </>
           )}

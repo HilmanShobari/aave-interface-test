@@ -27,10 +27,6 @@ msgstr ".JSON"
 msgid "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to learn more."
 msgstr "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to learn more."
 
-#: src/components/transactions/Borrow/BorrowModalContent.tsx
-msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
-msgstr "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
-
 #: src/modules/dashboard/lists/SlippageList.tsx
 msgid "<0>Slippage tolerance </0><1>{selectedSlippage}% </1><2>{0}</2>"
 msgstr "<0>Slippage tolerance </0><1>{selectedSlippage}% </1><2>{0}</2>"
@@ -393,8 +389,8 @@ msgstr "Blocked Address"
 #: src/modules/dashboard/lists/BorrowAssetsList/BorrowAssetsListMobileItem.tsx
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsListItem.tsx
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsListMobileItem.tsx
-#: src/modules/history/HistoryFilterMenu.tsx
 #: src/modules/history/actions/ActionDetails.tsx
+#: src/modules/history/HistoryFilterMenu.tsx
 #: src/modules/reserve-overview/ReserveActions.tsx
 msgid "Borrow"
 msgstr "Borrow"
@@ -634,10 +630,6 @@ msgstr "Collateralization"
 msgid "Collector Contract"
 msgstr "Collector Contract"
 
-#: src/modules/reserve-overview/BorrowInfo.tsx
-msgid "Collector Info"
-msgstr "Collector Info"
-
 #: src/components/WalletConnection/ConnectWalletButton.tsx
 #: src/layouts/WalletWidget.tsx
 msgid "Connect wallet"
@@ -806,10 +798,6 @@ msgstr "Due to the Horizon bridge exploit, certain assets on the Harmony network
 msgid "E-Mode"
 msgstr "E-Mode"
 
-#: src/modules/reserve-overview/ReserveConfiguration.tsx
-msgid "E-Mode Category"
-msgstr "E-Mode Category"
-
 #: src/components/transactions/Emode/EmodeModalContent.tsx
 msgid "E-Mode category"
 msgstr "E-Mode category"
@@ -821,10 +809,6 @@ msgstr "E-Mode increases your LTV for a selected category of assets up to 97%. <
 #: src/components/infoTooltips/EModeTooltip.tsx
 msgid "E-Mode increases your LTV for a selected category of assets up to<0/>. <1>Learn more</1>"
 msgstr "E-Mode increases your LTV for a selected category of assets up to<0/>. <1>Learn more</1>"
-
-#: src/modules/reserve-overview/ReserveConfiguration.tsx
-msgid "E-Mode increases your LTV for a selected category of assets, meaning that when E-mode is enabled, you will have higher borrowing power over assets of the same E-mode category which are defined by Aave Governance. You can enter E-Mode from your <0>Dashboard</0>. To learn more about E-Mode and applied restrictions in <1>FAQ</1> or <2>Aave V3 Technical Paper</2>."
-msgstr "E-Mode increases your LTV for a selected category of assets, meaning that when E-mode is enabled, you will have higher borrowing power over assets of the same E-mode category which are defined by Aave Governance. You can enter E-Mode from your <0>Dashboard</0>. To learn more about E-Mode and applied restrictions in <1>FAQ</1> or <2>Aave V3 Technical Paper</2>."
 
 #: src/modules/dashboard/DashboardEModeButton.tsx
 msgid "Efficiency mode (E-Mode)"
@@ -918,7 +902,6 @@ msgstr "Failed to load proposal voters. Please refresh the page."
 #: src/modules/faucet/FaucetAssetsList.tsx
 #: src/modules/faucet/FaucetItemLoader.tsx
 #: src/modules/faucet/FaucetMobileItemLoader.tsx
-#: src/ui-config/menu-items/index.tsx
 msgid "Faucet"
 msgstr "Faucet"
 
@@ -966,7 +949,6 @@ msgid "Get ABP Token"
 msgstr "Get ABP Token"
 
 #: src/layouts/MobileMenu.tsx
-#: src/layouts/SettingsMenu.tsx
 msgid "Global settings"
 msgstr "Global settings"
 
@@ -983,10 +965,6 @@ msgstr "Go to Balancer Pool"
 #: src/components/transactions/MigrateV3/MigrateV3ModalContent.tsx
 msgid "Go to V3 Dashboard"
 msgstr "Go to V3 Dashboard"
-
-#: src/ui-config/menu-items/index.tsx
-msgid "Governance"
-msgstr "Governance"
 
 #: src/layouts/components/LanguageSwitcher.tsx
 msgid "Greek"
@@ -1013,10 +991,6 @@ msgstr "Health factor is lesser than the liquidation threshold"
 #: src/ui-config/errorMapping.tsx
 msgid "Health factor is not below the threshold"
 msgstr "Health factor is not below the threshold"
-
-#: src/components/lists/ListWrapper.tsx
-msgid "Hide"
-msgstr "Hide"
 
 #: src/components/transactions/Borrow/BorrowModalContent.tsx
 #: src/components/transactions/Withdraw/WithdrawModalContent.tsx
@@ -1062,10 +1036,6 @@ msgstr "Inconsistent flashloan parameters"
 #: src/ui-config/errorMapping.tsx
 msgid "Interest rate rebalance conditions were not met"
 msgstr "Interest rate rebalance conditions were not met"
-
-#: src/modules/reserve-overview/ReserveConfiguration.tsx
-msgid "Interest rate strategy"
-msgstr "Interest rate strategy"
 
 #: src/ui-config/errorMapping.tsx
 msgid "Invalid amount to burn"
@@ -1177,7 +1147,6 @@ msgstr "Liquidation Threshold"
 msgid "Liquidation at"
 msgstr "Liquidation at"
 
-#: src/modules/reserve-overview/ReserveConfiguration.tsx
 #: src/modules/reserve-overview/SupplyInfo.tsx
 msgid "Liquidation penalty"
 msgstr "Liquidation penalty"
@@ -1192,7 +1161,6 @@ msgstr "Liquidation risk parameters"
 
 #: src/components/transactions/Swap/SwapModalDetails.tsx
 #: src/modules/migration/MigrationListMobileItem.tsx
-#: src/modules/reserve-overview/ReserveConfiguration.tsx
 #: src/modules/reserve-overview/SupplyInfo.tsx
 msgid "Liquidation threshold"
 msgstr "Liquidation threshold"
@@ -1221,12 +1189,7 @@ msgstr "MAX"
 msgid "Manage analytics"
 msgstr "Manage analytics"
 
-#: src/modules/reserve-overview/ReserveTopDetails.tsx
-msgid "Market"
-msgstr "Market"
-
 #: src/modules/markets/MarketsTopPanel.tsx
-#: src/ui-config/menu-items/index.tsx
 msgid "Markets"
 msgstr "Markets"
 
@@ -1236,7 +1199,6 @@ msgstr "Max"
 
 #: src/modules/migration/MigrationList.tsx
 #: src/modules/migration/MigrationListMobileItem.tsx
-#: src/modules/reserve-overview/ReserveConfiguration.tsx
 #: src/modules/reserve-overview/SupplyInfo.tsx
 msgid "Max LTV"
 msgstr "Max LTV"
@@ -1254,7 +1216,6 @@ msgid "Maximum amount available to borrow is limited because protocol borrow cap
 msgstr "Maximum amount available to borrow is limited because protocol borrow cap is nearly reached."
 
 #: src/modules/reserve-overview/BorrowInfo.tsx
-#: src/modules/reserve-overview/SupplyInfo.tsx
 msgid "Maximum amount available to supply is <0/> {0} (<1/>)."
 msgstr "Maximum amount available to supply is <0/> {0} (<1/>)."
 
@@ -1645,8 +1606,8 @@ msgstr "Repaid"
 #: src/components/transactions/Repay/RepayModal.tsx
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsListItem.tsx
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsListMobileItem.tsx
-#: src/modules/history/HistoryFilterMenu.tsx
 #: src/modules/history/actions/ActionDetails.tsx
+#: src/modules/history/HistoryFilterMenu.tsx
 msgid "Repay"
 msgstr "Repay"
 
@@ -1733,10 +1694,6 @@ msgstr "Reward(s) to claim"
 msgid "Rewards APR"
 msgstr "Rewards APR"
 
-#: src/components/HealthFactorNumber.tsx
-msgid "Risk details"
-msgstr "Risk details"
-
 #: src/modules/dashboard/lists/ListItemAPYButton.tsx
 msgid "SEE CHARTS"
 msgstr "SEE CHARTS"
@@ -1809,10 +1766,6 @@ msgstr "Share on Lens"
 #: pages/governance/proposal/[proposalId].governance.tsx
 msgid "Share on twitter"
 msgstr "Share on twitter"
-
-#: src/components/lists/ListWrapper.tsx
-msgid "Show"
-msgstr "Show"
 
 #: src/modules/dashboard/DashboardListTopPanel.tsx
 msgid "Show assets with 0 balance"
@@ -1896,7 +1849,6 @@ msgstr "Stablecoin"
 #: src/components/transactions/Stake/StakeActions.tsx
 #: src/modules/staking/StakingPanel.tsx
 #: src/modules/staking/StakingPanel.tsx
-#: src/ui-config/menu-items/index.tsx
 msgid "Stake"
 msgstr "Stake"
 
@@ -1959,8 +1911,8 @@ msgstr "Supplied asset amount"
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsListMobileItem.tsx
 #: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsListItem.tsx
 #: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsListMobileItem.tsx
-#: src/modules/history/HistoryFilterMenu.tsx
 #: src/modules/history/actions/ActionDetails.tsx
+#: src/modules/history/HistoryFilterMenu.tsx
 #: src/modules/reserve-overview/ReserveActions.tsx
 msgid "Supply"
 msgstr "Supply"
@@ -2341,7 +2293,6 @@ msgstr "Track wallet balance in read-only mode"
 msgid "Transaction failed"
 msgstr "Transaction failed"
 
-#: src/layouts/WalletWidget.tsx
 #: src/modules/history/HistoryTopPanel.tsx
 msgid "Transaction history"
 msgstr "Transaction history"
@@ -2442,9 +2393,8 @@ msgstr "User is in isolation mode"
 msgid "User is trying to borrow multiple assets including a siloed one"
 msgstr "User is trying to borrow multiple assets including a siloed one"
 
-#: src/modules/reserve-overview/ReserveConfiguration.tsx
-#: src/modules/reserve-overview/ReserveTopDetails.tsx
 #: src/modules/reserve-overview/graphs/InterestRateModelGraph.tsx
+#: src/modules/reserve-overview/ReserveTopDetails.tsx
 msgid "Utilization Rate"
 msgstr "Utilization Rate"
 
@@ -2475,14 +2425,6 @@ msgstr "Variable debt supply is not zero"
 #: src/components/infoTooltips/VariableAPYTooltip.tsx
 msgid "Variable interest rate will <0>fluctuate</0> based on the market conditions. Recommended for short-term positions."
 msgstr "Variable interest rate will <0>fluctuate</0> based on the market conditions. Recommended for short-term positions."
-
-#: src/components/MarketSwitcher.tsx
-msgid "Version 2"
-msgstr "Version 2"
-
-#: src/components/MarketSwitcher.tsx
-msgid "Version 3"
-msgstr "Version 3"
 
 #: src/modules/history/TransactionRowItem.tsx
 msgid "View"
@@ -2591,8 +2533,8 @@ msgstr "With testnet Faucet you can get free assets to test the Aave Protocol. M
 #: src/components/transactions/Withdraw/WithdrawModal.tsx
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsListItem.tsx
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsListMobileItem.tsx
-#: src/modules/history/HistoryFilterMenu.tsx
 #: src/modules/history/actions/ActionDetails.tsx
+#: src/modules/history/HistoryFilterMenu.tsx
 msgid "Withdraw"
 msgstr "Withdraw"
 

@@ -43,7 +43,7 @@ export const TextWithTooltip = ({
       )}
 
       <ContentWithTooltip tooltipContent={<>{children}</>} open={open} setOpen={setOpen}>
-        <IconButton
+        {/* <IconButton
           sx={{
             display: 'flex',
             alignItems: 'center',
@@ -71,7 +71,7 @@ export const TextWithTooltip = ({
           >
             {icon || <InformationCircleIcon />}
           </SvgIcon>
-        </IconButton>
+        </IconButton> */}
       </ContentWithTooltip>
     </Box>
   );

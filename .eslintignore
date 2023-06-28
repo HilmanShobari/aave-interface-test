@@ -20,3 +20,7 @@ src/locales/
 *.md
 *.log
 *.lock
+
+# Temporary Ignores
+pages/
+src/

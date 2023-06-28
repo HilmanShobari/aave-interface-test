@@ -117,7 +117,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
               <Trans>Go Back</Trans>
             </Button>
 
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <MarketLogo size={20} logo={network.networkLogoPath} />
               <Typography variant="subheader1" sx={{ color: 'common.white' }}>
                 {market.marketTitle} <Trans>Market</Trans>
@@ -135,7 +135,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
                   <Typography variant="subheader2">Version 3</Typography>
                 </Box>
               )}
-            </Box>
+            </Box> */}
           </Box>
 
           {downToSM && (
@@ -187,7 +187,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
                 <Skeleton width={16} height={16} sx={{ ml: 1, background: '#383D51' }} />
               ) : (
                 <Box sx={{ display: 'flex' }}>
-                  <TokenLinkDropdown poolReserve={poolReserve} downToSM={downToSM} />
+                  {/* <TokenLinkDropdown poolReserve={poolReserve} downToSM={downToSM} />
                   {connected && (
                     <AddTokenDropdown
                       poolReserve={poolReserve}
@@ -197,7 +197,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
                       currentChainId={currentChainId}
                       connectedChainId={connectedChainId}
                     />
-                  )}
+                  )} */}
                 </Box>
               )}
             </Box>
@@ -209,7 +209,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           />
         </>
       )}
-      <TopInfoPanelItem title={<Trans>Reserve Size</Trans>} loading={loading} hideIcon>
+      <TopInfoPanelItem title={<Trans>Reserve Size</Trans>} loading={loading} /*hideIcon*/>
         <FormattedNumber
           value={Math.max(Number(poolReserve?.totalLiquidityUSD), 0)}
           symbol="USD"
@@ -219,7 +219,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
         />
       </TopInfoPanelItem>
 
-      <TopInfoPanelItem title={<Trans>Available liquidity</Trans>} loading={loading} hideIcon>
+      <TopInfoPanelItem title={<Trans>Available liquidity</Trans>} loading={loading} /*hideIcon*/>
         <FormattedNumber
           value={Math.max(Number(poolReserve?.availableLiquidityUSD), 0)}
           symbol="USD"
@@ -229,7 +229,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
         />
       </TopInfoPanelItem>
 
-      <TopInfoPanelItem title={<Trans>Utilization Rate</Trans>} loading={loading} hideIcon>
+      <TopInfoPanelItem title={<Trans>Utilization Rate</Trans>} loading={loading} /*hideIcon*/>
         <FormattedNumber
           value={poolReserve?.borrowUsageRatio}
           percent
@@ -239,7 +239,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
         />
       </TopInfoPanelItem>
 
-      <TopInfoPanelItem title={<Trans>Oracle price</Trans>} loading={loading} hideIcon>
+      <TopInfoPanelItem title={<Trans>Oracle price</Trans>} loading={loading} /*hideIcon*/>
         <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
           <FormattedNumber
             value={poolReserve?.priceInUSD}
@@ -251,26 +251,27 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           {loading ? (
             <Skeleton width={16} height={16} sx={{ ml: 1, background: '#383D51' }} />
           ) : (
-            <CircleIcon tooltipText="View oracle contract" downToSM={downToSM}>
-              <Link
-                onClick={() =>
-                  trackEvent(GENERAL.EXTERNAL_LINK, {
-                    Link: 'Oracle Price',
-                    oracle: poolReserve?.priceOracle,
-                    assetName: poolReserve.name,
-                    asset: poolReserve.underlyingAsset,
-                  })
-                }
-                href={currentNetworkConfig.explorerLinkBuilder({
-                  address: poolReserve?.priceOracle,
-                })}
-                sx={iconStyling}
-              >
-                <SvgIcon sx={{ fontSize: downToSM ? '12px' : '14px' }}>
-                  <ExternalLinkIcon />
-                </SvgIcon>
-              </Link>
-            </CircleIcon>
+            <></>
+            // <CircleIcon tooltipText="View oracle contract" downToSM={downToSM}>
+            //   <Link
+            //     onClick={() =>
+            //       trackEvent(GENERAL.EXTERNAL_LINK, {
+            //         Link: 'Oracle Price',
+            //         oracle: poolReserve?.priceOracle,
+            //         assetName: poolReserve.name,
+            //         asset: poolReserve.underlyingAsset,
+            //       })
+            //     }
+            //     href={currentNetworkConfig.explorerLinkBuilder({
+            //       address: poolReserve?.priceOracle,
+            //     })}
+            //     sx={iconStyling}
+            //   >
+            //     <SvgIcon sx={{ fontSize: downToSM ? '12px' : '14px' }}>
+            //       <ExternalLinkIcon />
+            //     </SvgIcon>
+            //   </Link>
+            // </CircleIcon>
           )}
         </Box>
       </TopInfoPanelItem>

@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import AnalyticsConsent from 'src/components/Analytics/AnalyticsConsent';
 import { FORK_ENABLED } from 'src/utils/marketsAndNetworksConfig';
 
-import { AppFooter } from './AppFooter';
+// import { AppFooter } from './AppFooter';
 import { AppHeader } from './AppHeader';
 
 export function MainLayout({ children }: { children: ReactNode }) {
@@ -14,8 +14,8 @@ export function MainLayout({ children }: { children: ReactNode }) {
         {children}
       </Box>
 
-      <AppFooter />
-      {FORK_ENABLED ? null : <AnalyticsConsent />}
+      {/* <AppFooter /> */}
+      {/* {FORK_ENABLED ? null : <AnalyticsConsent />} */}
     </>
   );
 }

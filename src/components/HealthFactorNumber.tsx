@@ -1,6 +1,5 @@
 import { valueToBigNumber } from '@aave/math-utils';
-import { Trans } from '@lingui/macro';
-import { Box, Button, Typography, useTheme } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 import { TypographyProps } from '@mui/material/Typography';
 import BigNumber from 'bignumber.js';
 
@@ -53,7 +52,7 @@ export const HealthFactorNumber = ({
         />
       )}
 
-      {onInfoClick && (
+      {/* {onInfoClick && (
         <Button
           onClick={onInfoClick}
           variant="surface"
@@ -62,7 +61,7 @@ export const HealthFactorNumber = ({
         >
           <Trans>Risk details</Trans>
         </Button>
-      )}
+      )} */}
 
       {HALIntegrationComponent && (
         <Box ml={{ xs: 0, xsm: 2 }} mt={{ xs: 1, xsm: 0 }}>

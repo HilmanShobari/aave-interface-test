@@ -51,7 +51,7 @@ export const SupplyInfo = ({
         {showSupplyCapStatus ? (
           // With supply cap
           <>
-            <CapsCircularStatus
+            {/* <CapsCircularStatus
               value={supplyCap.percentUsed}
               tooltipContent={
                 <>
@@ -77,7 +77,7 @@ export const SupplyInfo = ({
                   </Trans>
                 </>
               }
-            />
+            /> */}
             <PanelItem
               title={
                 <Box display="flex" alignItems="center">

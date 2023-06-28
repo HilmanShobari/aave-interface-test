@@ -142,7 +142,7 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
         </>
       )}
 
-      {reserve.eModeCategoryId !== 0 && (
+      {/* {reserve.eModeCategoryId !== 0 && (
         <>
           <Divider sx={{ my: '40px' }} />
           <PanelRow>
@@ -282,9 +282,9 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
             </Box>
           </PanelRow>
         </>
-      )}
+      )} */}
 
-      {(reserve.borrowingEnabled || Number(reserve.totalDebt) > 0) && (
+      {/* {(reserve.borrowingEnabled || Number(reserve.totalDebt) > 0) && (
         <>
           <Divider sx={{ my: '40px' }} />
 
@@ -335,7 +335,7 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
             </Box>
           </PanelRow>
         </>
-      )}
+      )} */}
     </Paper>
   );
 };

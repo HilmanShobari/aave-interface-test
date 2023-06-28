@@ -152,7 +152,7 @@ export const ReserveActions = ({ reserve }: ReserveActionsProps) => {
                 }}
               />
             )}
-            {alerts}
+            {/* {alerts} */}
           </Stack>
         </>
       )}
@@ -425,7 +425,7 @@ const WalletBalance = ({ balance, symbol, marketTitle }: WalletBalanceProps) => 
 
   return (
     <Stack direction="row" gap={3}>
-      <Box
+      {/* <Box
         sx={(theme) => ({
           width: '42px',
           height: '42px',
@@ -438,7 +438,7 @@ const WalletBalance = ({ balance, symbol, marketTitle }: WalletBalanceProps) => 
         })}
       >
         <WalletIcon sx={{ stroke: `${theme.palette.text.secondary}` }} />
-      </Box>
+      </Box> */}
       <Box>
         <Typography variant="description" color="text.secondary">
           Wallet balance

@@ -327,7 +327,7 @@ export const BorrowModalContent = ({
         </>
       )}
 
-      <Warning severity="info" sx={{ my: 6 }}>
+      {/* <Warning severity="info" sx={{ my: 6 }}>
         <Trans>
           <b>Attention:</b> Parameter changes via governance can alter your account health factor
           and risk of liquidation. Follow the{' '}
@@ -344,7 +344,7 @@ export const BorrowModalContent = ({
           </a>{' '}
           for updates.
         </Trans>
-      </Warning>
+      </Warning> */}
 
       <BorrowActions
         poolReserve={poolReserve}

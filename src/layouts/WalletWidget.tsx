@@ -189,10 +189,10 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Box
               sx={{
-                bgcolor: networkColor,
-                width: 6,
+                // bgcolor: networkColor,
+                // width: 6,
                 height: 6,
-                mr: 2,
+                // mr: 2,
                 boxShadow: '0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.25)',
                 borderRadius: '50%',
               }}
@@ -205,7 +205,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
       </Box>
       <Divider sx={{ my: { xs: 7, md: 0 }, borderColor: { xs: '#FFFFFF1F', md: 'divider' } }} />
 
-      <Box
+      {/* <Box
         component={component}
         sx={{ color: { xs: '#F1F1F3', md: 'text.primary', cursor: 'pointer' } }}
         onClick={() => {
@@ -231,14 +231,14 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
         <ListItemText>
           <Trans>Transaction history</Trans>
         </ListItemText>
-      </Box>
+      </Box> */}
 
       <Box
         component={component}
         sx={{ color: { xs: '#F1F1F3', md: 'text.primary', cursor: 'pointer' } }}
         onClick={handleCopy}
       >
-        <ListItemIcon
+        {/* <ListItemIcon
           sx={{
             color: {
               xs: '#F1F1F3',
@@ -251,7 +251,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
           <SvgIcon fontSize="small">
             <DuplicateIcon />
           </SvgIcon>
-        </ListItemIcon>
+        </ListItemIcon> */}
         <ListItemText>
           <Trans>Copy address</Trans>
         </ListItemText>
@@ -264,7 +264,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
             sx={{ color: { xs: '#F1F1F3', md: 'text.primary' } }}
             onClick={handleViewOnExplorer}
           >
-            <ListItemIcon
+            {/* <ListItemIcon
               sx={{
                 color: {
                   xs: '#F1F1F3',
@@ -277,7 +277,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
               <SvgIcon fontSize="small">
                 <ExternalLinkIcon />
               </SvgIcon>
-            </ListItemIcon>
+            </ListItemIcon> */}
             <ListItemText>
               <Trans>View on Explorer</Trans>
             </ListItemText>

@@ -154,11 +154,11 @@ export const MarketSwitcher = () => {
           const { market, network } = getMarketInfoById(marketId as CustomMarket);
           return (
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <MarketLogo
+              {/* <MarketLogo
                 size={upToLG ? 32 : 28}
                 logo={network.networkLogoPath}
                 testChainName={getMarketHelpData(market.marketTitle).testChainName}
-              />
+              /> */}
               <Box sx={{ mr: 1, display: 'inline-flex', alignItems: 'flex-start' }}>
                 <Typography
                   variant={upToLG ? 'display1' : 'h1'}
@@ -171,7 +171,7 @@ export const MarketSwitcher = () => {
                   {getMarketHelpData(market.marketTitle).name} {market.isFork ? 'Fork' : ''}
                   {upToLG && ' Market'}
                 </Typography>
-                {market.v3 && (
+                {/* {market.v3 && (
                   <Box
                     sx={{
                       color: '#fff',
@@ -182,7 +182,7 @@ export const MarketSwitcher = () => {
                   >
                     <Typography variant="subheader2">Version 3</Typography>
                   </Box>
-                )}
+                )} */}
               </Box>
             </Box>
           );
@@ -218,7 +218,7 @@ export const MarketSwitcher = () => {
         </Typography>
       </Box>
 
-      {isV3MarketsAvailable && (
+      {/* {isV3MarketsAvailable && (
         <Box sx={{ mx: '18px', display: 'flex', justifyContent: 'center' }}>
           <StyledToggleButtonGroup
             value={selectedMarketVersion}
@@ -301,7 +301,7 @@ export const MarketSwitcher = () => {
             </StyledToggleButton>
           </StyledToggleButtonGroup>
         </Box>
-      )}
+      )} */}
       {availableMarkets.map((marketId: CustomMarket) => {
         const { market, network } = getMarketInfoById(marketId);
         const marketNaming = getMarketHelpData(market.marketTitle);
